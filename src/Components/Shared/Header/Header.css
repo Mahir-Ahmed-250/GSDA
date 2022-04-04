@@ -1,0 +1,55 @@
+.icon-ask {
+    width: 15px;
+    height: 15px;
+}
+
+.nav-links-top {
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-links {
+    font-size: 14px;
+    font-weight: bolder;
+    text-decoration: none;
+    color: black;
+    border-right: 0.5px solid beige;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.nav-links:hover {
+    color: black;
+}
+
+.ask-text {
+    color: black;
+}
+
+.login-text {
+    border-right: 0.5px solid beige;
+    padding-right: 15px;
+    font-size: 14px;
+    font-weight: bolder;
+
+}
+
+.nav-links-login {
+    text-decoration: none;
+    border-right: 0.5px solid beige;
+    padding-right: 15px;
+    color: black;
+}
+
+.nav-links-register {
+    text-decoration: none;
+    padding-left: 15px;
+    color: black;
+}
+
+.register-text {
+    padding-left: 15px;
+    font-size: 14px;
+    font-weight: bolder;
+    text-decoration: none;
+}

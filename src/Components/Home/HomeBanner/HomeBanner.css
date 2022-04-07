@@ -1,0 +1,120 @@
+.home-banner-bg {
+    background: rgb(34, 193, 195);
+    background: linear-gradient(0deg, rgba(34, 193, 195, 1) 0%, rgba(140, 153, 203, 1) 100%);
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 50px 0px 30px 0px;
+}
+
+.home-banner {
+    display: flex;
+    justify-content: space-between;
+}
+
+.home-player {
+    border-radius: 40px;
+}
+
+.courses-icon {
+    width: 60px;
+}
+
+.instructor-icon {
+    width: 60px;
+}
+
+.user-icon {
+    width: 45px;
+}
+
+
+.button {
+    height: 70px;
+    width: 250px;
+    background-color: rgb(255, 149, 28);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    color: #fff;
+    border-radius: 4px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    font-size: 20px
+}
+
+.button span:nth-child(1) {
+    position: absolute;
+    left: 0;
+    top: 0;
+    transform: scaleY(0);
+    background-color: #a15050;
+    width: 4px;
+    height: 100%;
+    transition: all 0.5s;
+    transform-origin: bottom
+}
+
+.button:hover span:nth-child(1) {
+    transform: scaleY(1)
+}
+
+.button span:nth-child(2) {
+    position: absolute;
+    left: 0;
+    top: 0;
+    transform: scaleX(0);
+    background-color: #a15050;
+    width: 100%;
+    height: 4px;
+    transition: all 0.5s;
+    transform-origin: left
+}
+
+.button:hover span:nth-child(2) {
+    transform: scaleX(1)
+}
+
+.button span:nth-child(3) {
+    position: absolute;
+    right: 0;
+    top: 0;
+    transform: scaleY(0);
+    background-color: #a15050;
+    width: 4px;
+    height: 100%;
+    transition: all 0.5s;
+    transform-origin: top
+}
+
+.button:hover span:nth-child(3) {
+    transform: scaleY(1)
+}
+
+.button span:nth-child(4) {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    transform: scaleX(0);
+    background-color: #a15050;
+    width: 100%;
+    height: 4px;
+    transition: all 0.5s;
+    transform-origin: top
+}
+
+.button:hover span:nth-child(4) {
+    transform: scaleX(1)
+}
+
+@media only screen and (max-width: 600px) {
+    .home-banner {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .home-player {
+        width: 100%;
+    }
+}

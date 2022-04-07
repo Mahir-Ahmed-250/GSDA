@@ -1,3 +1,8 @@
+.nav {
+    background-color: rgb(219, 219, 219);
+    line-height: 50px;
+}
+
 .icon-ask {
     width: 15px;
     height: 15px;
@@ -6,6 +11,7 @@
 .nav-links-top {
     display: flex;
     justify-content: space-between;
+
 }
 
 .nav-links {
@@ -20,6 +26,10 @@
 
 .nav-links:hover {
     color: black;
+}
+
+.icon-mail {
+    margin-right: 8px;
 }
 
 .ask-text {
@@ -52,4 +62,20 @@
     font-size: 14px;
     font-weight: bolder;
     text-decoration: none;
+}
+
+@media only screen and (max-width: 600px) {
+
+
+    .nav-links-top {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .nav-links {
+        border: none
+    }
+
+
 }

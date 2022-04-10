@@ -1,41 +1,215 @@
+/* eslint-disable jsx-a11y/no-distracting-elements */
+
 import React from 'react';
 import './HomeBanner.css'
+import img1 from "./100.png"
+import img2 from "./200.png"
+import img3 from "./300.png"
+import Button from '@mui/material/Button';
+import TextField from '@mui/material/TextField';
+import Stack from '@mui/material/Stack';
+import Autocomplete from '@mui/material/Autocomplete';
+import { Nav } from 'react-bootstrap';
 
 
 const HomeBanner = () => {
-
+    const top100Films = [
+        { title: 'The Shawshank Redemption', year: 1994 },
+        { title: 'The Godfather', year: 1972 },
+        { title: 'The Godfather: Part II', year: 1974 },
+        { title: 'The Dark Knight', year: 2008 },
+        { title: '12 Angry Men', year: 1957 },
+        { title: "Schindler's List", year: 1993 },
+        { title: 'Pulp Fiction', year: 1994 },
+        {
+            title: 'The Lord of the Rings: The Return of the King',
+            year: 2003,
+        },
+        { title: 'The Good, the Bad and the Ugly', year: 1966 },
+        { title: 'Fight Club', year: 1999 },
+        {
+            title: 'The Lord of the Rings: The Fellowship of the Ring',
+            year: 2001,
+        },
+        {
+            title: 'Star Wars: Episode V - The Empire Strikes Back',
+            year: 1980,
+        },
+        { title: 'Forrest Gump', year: 1994 },
+        { title: 'Inception', year: 2010 },
+        {
+            title: 'The Lord of the Rings: The Two Towers',
+            year: 2002,
+        },
+        { title: "One Flew Over the Cuckoo's Nest", year: 1975 },
+        { title: 'Goodfellas', year: 1990 },
+        { title: 'The Matrix', year: 1999 },
+        { title: 'Seven Samurai', year: 1954 },
+        {
+            title: 'Star Wars: Episode IV - A New Hope',
+            year: 1977,
+        },
+        { title: 'City of God', year: 2002 },
+        { title: 'Se7en', year: 1995 },
+        { title: 'The Silence of the Lambs', year: 1991 },
+        { title: "It's a Wonderful Life", year: 1946 },
+        { title: 'Life Is Beautiful', year: 1997 },
+        { title: 'The Usual Suspects', year: 1995 },
+        { title: 'Léon: The Professional', year: 1994 },
+        { title: 'Spirited Away', year: 2001 },
+        { title: 'Saving Private Ryan', year: 1998 },
+        { title: 'Once Upon a Time in the West', year: 1968 },
+        { title: 'American History X', year: 1998 },
+        { title: 'Interstellar', year: 2014 },
+        { title: 'Casablanca', year: 1942 },
+        { title: 'City Lights', year: 1931 },
+        { title: 'Psycho', year: 1960 },
+        { title: 'The Green Mile', year: 1999 },
+        { title: 'The Intouchables', year: 2011 },
+        { title: 'Modern Times', year: 1936 },
+        { title: 'Raiders of the Lost Ark', year: 1981 },
+        { title: 'Rear Window', year: 1954 },
+        { title: 'The Pianist', year: 2002 },
+        { title: 'The Departed', year: 2006 },
+        { title: 'Terminator 2: Judgment Day', year: 1991 },
+        { title: 'Back to the Future', year: 1985 },
+        { title: 'Whiplash', year: 2014 },
+        { title: 'Gladiator', year: 2000 },
+        { title: 'Memento', year: 2000 },
+        { title: 'The Prestige', year: 2006 },
+        { title: 'The Lion King', year: 1994 },
+        { title: 'Apocalypse Now', year: 1979 },
+        { title: 'Alien', year: 1979 },
+        { title: 'Sunset Boulevard', year: 1950 },
+        {
+            title: 'Dr. Strangelove or: How I Learned to Stop Worrying and Love the Bomb',
+            year: 1964,
+        },
+        { title: 'The Great Dictator', year: 1940 },
+        { title: 'Cinema Paradiso', year: 1988 },
+        { title: 'The Lives of Others', year: 2006 },
+        { title: 'Grave of the Fireflies', year: 1988 },
+        { title: 'Paths of Glory', year: 1957 },
+        { title: 'Django Unchained', year: 2012 },
+        { title: 'The Shining', year: 1980 },
+        { title: 'WALL·E', year: 2008 },
+        { title: 'American Beauty', year: 1999 },
+        { title: 'The Dark Knight Rises', year: 2012 },
+        { title: 'Princess Mononoke', year: 1997 },
+        { title: 'Aliens', year: 1986 },
+        { title: 'Oldboy', year: 2003 },
+        { title: 'Once Upon a Time in America', year: 1984 },
+        { title: 'Witness for the Prosecution', year: 1957 },
+        { title: 'Das Boot', year: 1981 },
+        { title: 'Citizen Kane', year: 1941 },
+        { title: 'North by Northwest', year: 1959 },
+        { title: 'Vertigo', year: 1958 },
+        {
+            title: 'Star Wars: Episode VI - Return of the Jedi',
+            year: 1983,
+        },
+        { title: 'Reservoir Dogs', year: 1992 },
+        { title: 'Braveheart', year: 1995 },
+        { title: 'M', year: 1931 },
+        { title: 'Requiem for a Dream', year: 2000 },
+        { title: 'Amélie', year: 2001 },
+        { title: 'A Clockwork Orange', year: 1971 },
+        { title: 'Like Stars on Earth', year: 2007 },
+        { title: 'Taxi Driver', year: 1976 },
+        { title: 'Lawrence of Arabia', year: 1962 },
+        { title: 'Double Indemnity', year: 1944 },
+        {
+            title: 'Eternal Sunshine of the Spotless Mind',
+            year: 2004,
+        },
+        { title: 'Amadeus', year: 1984 },
+        { title: 'To Kill a Mockingbird', year: 1962 },
+        { title: 'Toy Story 3', year: 2010 },
+        { title: 'Logan', year: 2017 },
+        { title: 'Full Metal Jacket', year: 1987 },
+        { title: 'Dangal', year: 2016 },
+        { title: 'The Sting', year: 1973 },
+        { title: '2001: A Space Odyssey', year: 1968 },
+        { title: "Singin' in the Rain", year: 1952 },
+        { title: 'Toy Story', year: 1995 },
+        { title: 'Bicycle Thieves', year: 1948 },
+        { title: 'The Kid', year: 1921 },
+        { title: 'Inglourious Basterds', year: 2009 },
+        { title: 'Snatch', year: 2000 },
+        { title: '3 Idiots', year: 2009 },
+        { title: 'Monty Python and the Holy Grail', year: 1975 },
+    ];
     return (
         <div className='home-banner-bg'>
+            <marquee className="marquee-text">Welcome To Global Skills Development Agency</marquee>
+            <br />
+            <br />
+            <br />
             <div className='container'>
                 <div className="row">
                     <div className="col-lg-6 col-12">
-                        <h5>Learn on your Schedule</h5>
-                        <h3>Welcome To Global Skills Development Agency</h3>
+                        <h5 className='welcome-text-1'> Learn on your Schedule</h5>
+                        <h3 className='welcome-text-2'>Welcome To <span className='company-name'>Global Skills Development Agency</span></h3>
                         <br />
                         <div className="row">
                             <div className="col-lg-3">
-                                <svg className="courses-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><path d="M623.1 136.9l-282.7-101.2c-13.73-4.91-28.7-4.91-42.43 0L16.05 136.9C6.438 140.4 0 149.6 0 160s6.438 19.65 16.05 23.09L76.07 204.6c-11.89 15.8-20.26 34.16-24.55 53.95C40.05 263.4 32 274.8 32 288c0 9.953 4.814 18.49 11.94 24.36l-24.83 149C17.48 471.1 25 480 34.89 480H93.11c9.887 0 17.41-8.879 15.78-18.63l-24.83-149C91.19 306.5 96 297.1 96 288c0-10.29-5.174-19.03-12.72-24.89c4.252-17.76 12.88-33.82 24.94-47.03l190.6 68.23c13.73 4.91 28.7 4.91 42.43 0l282.7-101.2C633.6 179.6 640 170.4 640 160S633.6 140.4 623.1 136.9zM351.1 314.4C341.7 318.1 330.9 320 320 320c-10.92 0-21.69-1.867-32-5.555L142.8 262.5L128 405.3C128 446.6 213.1 480 320 480c105.1 0 192-33.4 192-74.67l-14.78-142.9L351.1 314.4z" /></svg>
-                                <p>50+ Courses</p>
+                                <img className="courses-icon" src={img1} alt="" />
+                                <p className='courses-text'>50+ Courses</p>
                             </div>
                             <div className="col-lg-3">
-                                <svg className="instructor-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><path d="M144 48C144 21.49 165.5 0 192 0C218.5 0 240 21.49 240 48C240 74.51 218.5 96 192 96C165.5 96 144 74.51 144 48zM152 512C134.3 512 120 497.7 120 480V256.9L91.43 304.5C82.33 319.6 62.67 324.5 47.52 315.4C32.37 306.3 27.47 286.7 36.58 271.5L94.85 174.6C112.2 145.7 143.4 128 177.1 128H320V48C320 21.49 341.5 .0003 368 .0003H592C618.5 .0003 640 21.49 640 48V272C640 298.5 618.5 320 592 320H368C341.5 320 320 298.5 320 272V224H384V256H576V64H384V128H400C417.7 128 432 142.3 432 160C432 177.7 417.7 192 400 192H264V480C264 497.7 249.7 512 232 512C214.3 512 200 497.7 200 480V352H184V480C184 497.7 169.7 512 152 512L152 512z" /></svg>
-                                <p>50+ Instructor</p>
+                                <img className="instructor-icon" src={img2} alt="" />
+                                <p className='instructor-text'>50+ Instructor</p>
                             </div>
                             <div className="col-lg-3">
-                                <svg className="user-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M45.63 79.75L52 81.25v58.5C45 143.9 40 151.3 40 160c0 8.375 4.625 15.38 11.12 19.75L35.5 242C33.75 248.9 37.63 256 43.13 256h41.75c5.5 0 9.375-7.125 7.625-13.1L76.88 179.8C83.38 175.4 88 168.4 88 160c0-8.75-5-16.12-12-20.25V87.13L128 99.63l.001 60.37c0 70.75 57.25 128 128 128s127.1-57.25 127.1-128L384 99.62l82.25-19.87c18.25-4.375 18.25-27 0-31.5l-190.4-46c-13-3-26.62-3-39.63 0l-190.6 46C27.5 52.63 27.5 75.38 45.63 79.75zM359.2 312.8l-103.2 103.2l-103.2-103.2c-69.93 22.3-120.8 87.2-120.8 164.5C32 496.5 47.53 512 66.67 512h378.7C464.5 512 480 496.5 480 477.3C480 400 429.1 335.1 359.2 312.8z" /></svg>
-                                <p>50+ Graduates</p>
+                                <img className="user-icon" src={img3} alt="" />
+                                <p className='user-text'>50+ Graduates</p>
                             </div>
                         </div>
-                        <div className="content-center"> <span className="button"> <span></span> <span></span> <span></span> <span></span> Start Learning </span>
+                        <div className="content-center">
+                            {/* <span className="start-course-button btn btn-danger">
+                                <span ></span>
+                                <span ></span>
+                                <span ></span>
+                                <span ></span>
+                                Start Learning
+                            </span> */}
+
+                            <div> <Stack spacing={2}>
+                                <Autocomplete
+                                    onKeyDown={(event) => {
+                                        if (event.key === 'Enter') {
+                                            alert('hello')
+                                            event.defaultMuiPrevented = true;
+                                            // your handler code
+                                        }
+                                    }}
+                                    id="free-solo-demo"
+                                    freeSolo
+                                    options={top100Films.map((option) => option.title)}
+
+                                    renderInput={(params) => <TextField className="search-input"  {...params} placeholder="Search Courses" />}
+
+                                />
+
+                            </Stack></div>
+                            <div>  <Button className="mt-2" onClick={() => {
+                                alert('hello')
+                            }}
+                                variant="contained" size="large">
+                                Search
+                            </Button> </div>
+
+
+
                         </div>
                         <br />
                     </div>
                     <div className="col-lg-6 col-12">
-                        <iframe className="home-player" width="660" height="400" src="https://www.youtube.com/embed/slyY95bNF8E" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+                        <iframe className="home-player" width="620" height="380" src="https://www.youtube.com/embed/slyY95bNF8E" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
                     </div>
                 </div>
             </div>
-        </div>
+        </div >
 
     );
 };

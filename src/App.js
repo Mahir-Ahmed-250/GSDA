@@ -10,9 +10,7 @@ function App() {
   return (
     <div>
       <Router>
-        <TopMarquee></TopMarquee>
-        <Header>
-        </Header>
+
         <StickyNav></StickyNav>
         <Switch>
           <Route path='/'>

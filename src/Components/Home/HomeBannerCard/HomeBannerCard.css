@@ -1,3 +1,71 @@
-.homeBannerCard {
-    margin-top: -30px;
+@import url('https://fonts.googleapis.com/css2?family=Bad+Script&family=Bebas+Neue&family=Kanit:wght@200&family=Lobster&family=Overlock&family=Rancho&family=Ubuntu:wght@300&family=Varela+Round&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bad+Script&family=Bebas+Neue&family=Kanit:wght@200&family=Lobster&family=Overlock&family=Rancho&family=Varela+Round&display=swap');
+
+.journey-text {
+    font-family: 'Bad Script', cursive;
+    font-family: 'Bebas Neue', cursive;
+    font-family: 'Kanit', sans-serif;
+    font-family: 'Lobster', cursive;
+    font-family: 'Overlock', cursive;
+    font-family: 'Rancho', cursive;
+    font-family: 'Ubuntu', sans-serif;
+    font-family: 'Varela Round', sans-serif;
+    font-size: 40px;
+    text-align: center;
+    font-weight: 800;
+}
+
+.home-banner-card {
+    border: 1px solid;
+}
+
+.home-banner-card:hover {
+    background-color: rgb(255, 230, 0);
+    cursor: pointer;
+}
+
+.elearning-icon {
+    width: 60px
+}
+
+.classroom-icon {
+    width: 40px
+}
+
+.exam-icon {
+    width: 50px
+}
+
+.elearning-text {
+    font-size: 25px;
+    font-family: 'Bad Script', cursive;
+    font-family: 'Bebas Neue', cursive;
+    font-family: 'Kanit', sans-serif;
+    font-family: 'Lobster', cursive;
+    font-family: 'Overlock', cursive;
+    font-family: 'Rancho', cursive;
+    font-family: 'Varela Round', sans-serif;
+
+}
+
+.classroom-text {
+    font-size: 25px;
+    font-family: 'Bad Script', cursive;
+    font-family: 'Bebas Neue', cursive;
+    font-family: 'Kanit', sans-serif;
+    font-family: 'Lobster', cursive;
+    font-family: 'Overlock', cursive;
+    font-family: 'Rancho', cursive;
+    font-family: 'Varela Round', sans-serif;
+}
+
+.exam-text {
+    font-size: 25px;
+    font-family: 'Bad Script', cursive;
+    font-family: 'Bebas Neue', cursive;
+    font-family: 'Kanit', sans-serif;
+    font-family: 'Lobster', cursive;
+    font-family: 'Overlock', cursive;
+    font-family: 'Rancho', cursive;
+    font-family: 'Varela Round', sans-serif;
 }

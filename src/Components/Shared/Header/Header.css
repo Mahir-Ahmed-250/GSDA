@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Bad+Script&family=Lobster&family=Overlock&display=swap');
+
 .nav {
     background-color: rgb(219, 219, 219);
     line-height: 50px;
@@ -6,6 +8,7 @@
 .icon-ask {
     width: 15px;
     height: 15px;
+
 }
 
 .nav-links-top {
@@ -22,6 +25,9 @@
     border-right: 0.5px solid beige;
     padding-right: 15px;
     padding-left: 15px;
+    font-family: 'Bad Script', cursive;
+    font-family: 'Lobster', cursive;
+    font-family: 'Overlock', cursive
 }
 
 .nav-links:hover {

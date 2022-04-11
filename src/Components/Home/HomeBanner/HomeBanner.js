@@ -188,9 +188,7 @@ const HomeBanner = () => {
                                     options={top100Films.map((option) => option.title)}
 
                                     renderInput={(params) => <TextField className="search-input"  {...params} placeholder="Search Courses" />}
-
                                 />
-
                             </Stack></div>
                             <div>  <Button className="mt-2" onClick={() => {
                                 alert('hello')

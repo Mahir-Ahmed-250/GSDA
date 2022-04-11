@@ -6,22 +6,33 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
 
-
-
 // import required modules
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 import './ELearningCourses.css';
 import { Card } from "react-bootstrap";
 import { Pagination, Navigation } from "swiper";
+import SwiperCore, { Autoplay } from 'swiper';
 
 const ELearningCourses = () => {
+    SwiperCore.use([Autoplay])
     return (
         <div>
-            <div className='elearning-heading-text container'>
-                E-Learning Courses
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+
+            <div className='elearning-heading-text container '>
+                E-Learning Courses <br />
+                <hr style={{ width: "50%", margin: "auto" }} />
                 <>
+                    <br />
                     <Swiper
+                        autoplay={{ delay: 3000 }}
                         slidesPerView={3}
                         spaceBetween={30}
                         slidesPerGroup={3}

@@ -28,7 +28,7 @@ const HomeBannerCard = () => {
                     </div>
                     <div className="col-lg-4">
                         <Card className='home-banner-card'>
-                            <Card.Body><img className='exam-icon' src={img3} alt="" /><span className='exam-text'>EXAM ROOM</span></Card.Body>
+                            <Card.Body><img className='exam-icon' src={img3} alt="" /><span className='exam-text'>PRACTICE EXAM</span></Card.Body>
                         </Card>
                     </div>
                 </div>

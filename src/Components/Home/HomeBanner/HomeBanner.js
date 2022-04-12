@@ -175,7 +175,7 @@ const HomeBanner = () => {
                             </span> */}
 
                             <div> <Stack spacing={2}>
-                                <Autocomplete
+                                <Autocomplete className="search-input"
                                     onKeyDown={(event) => {
                                         if (event.key === 'Enter') {
                                             alert('hello')
@@ -186,8 +186,8 @@ const HomeBanner = () => {
                                     id="free-solo-demo"
                                     freeSolo
                                     options={top100Films.map((option) => option.title)}
-
                                     renderInput={(params) => <TextField className="search-input"  {...params} placeholder="Search Courses" />}
+
                                 />
                             </Stack></div>
                             <div>  <Button className="mt-2" onClick={() => {
@@ -202,7 +202,7 @@ const HomeBanner = () => {
                         </div>
                         <br />
                     </div>
-                    <div className="col-lg-6 col-12">
+                    <div className="col-lg-4 col-12">
                         <iframe className="home-player" width="620" height="380" src="https://www.youtube.com/embed/slyY95bNF8E" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
                     </div>
                 </div>

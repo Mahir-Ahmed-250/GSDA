@@ -1,7 +1,9 @@
 import React from 'react';
 import AccreditationAuthority from '../AccreditationAuthority/AccreditationAuthority';
+import Blogs from '../Blogs/Blogs';
 import ClassRoomCourses from '../ClassroomCourses/ClassroomCoursesAll/ClassRoomCourses';
 import ELearningCourses from '../E-learningCourses/E-learningCoursesAll/ELearningCourses';
+import Events from '../Events/Events';
 import HomeBanner from '../HomeBanner/HomeBanner';
 import HomeBannerCard from '../HomeBannerCard/HomeBannerCard';
 import PracticeExams from '../PracticeExams/PracticeExamsAll/PracticeExams';
@@ -15,6 +17,8 @@ const Home = () => {
             <ClassRoomCourses></ClassRoomCourses>
             <PracticeExams></PracticeExams>
             <AccreditationAuthority></AccreditationAuthority>
+            <Events></Events>
+            <Blogs></Blogs>
         </div>
     );
 };

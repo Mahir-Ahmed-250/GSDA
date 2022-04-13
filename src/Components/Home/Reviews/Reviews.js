@@ -11,15 +11,14 @@ import { EffectCoverflow, Pagination } from "swiper";
 import SwiperCore, { Autoplay } from 'swiper';
 import { Card } from 'react-bootstrap';
 
-
-const Events = () => {
+const Reviews = () => {
     SwiperCore.use([Autoplay])
     return (
         <div>
             <br />
             <br />
             <div className='elearning-heading-text container '>
-                Events <br />
+                Reviews<br />
                 <hr style={{ width: "50%", margin: "auto" }} />
                 <>
                     <br />
@@ -37,7 +36,7 @@ const Events = () => {
                             modifier: 1,
                             slideShadows: true,
                         }}
-                        pagination={true}
+                        pagination={false}
                         modules={[EffectCoverflow, Pagination]}
                         className="mySwiper"
                     >
@@ -45,45 +44,48 @@ const Events = () => {
                         <SwiperSlide>
                             <Card.Body >
 
-                                <img src="https://www.globalskills.com.bd/storage/courses/1647242736_1643872118_PRINCE2__logo_.png_700,430.png" alt="" />
-                                <p>Prince 2</p>
+                                <h2>Sayeed</h2>
+                                <p>Nice</p>
 
                             </Card.Body>
                         </SwiperSlide>
                         <SwiperSlide> <Card.Body >
 
-                            <img src="https://www.globalskills.com.bd/storage/courses/1647242736_1643872118_PRINCE2__logo_.png_700,430.png" alt="" />
-                            <p>Prince 2</p>
+                            <h2>Sayeed</h2>
+                            <p>Nice</p>
 
                         </Card.Body></SwiperSlide>
                         <SwiperSlide> <Card.Body >
 
-                            <img src="https://www.globalskills.com.bd/storage/courses/1647242736_1643872118_PRINCE2__logo_.png_700,430.png" alt="" />
-                            <p>Prince 2</p>
+                            <h2>Sayeed</h2>
+                            <p>Nice</p>
+
 
                         </Card.Body></SwiperSlide>
                         <SwiperSlide> <Card.Body >
 
-                            <img src="https://www.globalskills.com.bd/storage/courses/1647242736_1643872118_PRINCE2__logo_.png_700,430.png" alt="" />
-                            <p>Prince 2</p>
+                            <h2>Sayeed</h2>
+                            <p>Nice</p>
+
 
                         </Card.Body></SwiperSlide>
                         <SwiperSlide> <Card.Body >
 
-                            <img src="https://www.globalskills.com.bd/storage/courses/1647242736_1643872118_PRINCE2__logo_.png_700,430.png" alt="" />
-                            <p>Prince 2</p>
+                            <h2>Sayeed</h2>
+                            <p>Nice</p>
+
+
+                        </Card.Body></SwiperSlide>
+                        <SwiperSlide> <Card.Body >
+                            <h2>Sayeed</h2>
+                            <p>Nice</p>
+
 
                         </Card.Body></SwiperSlide>
                         <SwiperSlide> <Card.Body >
 
-                            <img src="https://www.globalskills.com.bd/storage/courses/1647242736_1643872118_PRINCE2__logo_.png_700,430.png" alt="" />
-                            <p>Prince 2</p>
-
-                        </Card.Body></SwiperSlide>
-                        <SwiperSlide> <Card.Body >
-
-                            <img src="https://www.globalskills.com.bd/storage/courses/1647242736_1643872118_PRINCE2__logo_.png_700,430.png" alt="" />
-                            <p>Prince 2</p>
+                            <h2>Sayeed</h2>
+                            <p>Nice</p>
 
                         </Card.Body></SwiperSlide>
 
@@ -94,6 +96,11 @@ const Events = () => {
     );
 };
 
-export default Events;
+export default Reviews;
+
+
+
+
+
 
 

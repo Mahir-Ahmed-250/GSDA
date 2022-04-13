@@ -63,36 +63,30 @@ const ELearningCourses = () => {
                                 <p>Prince 2</p>
                             </Card.Body>
                         </Card></SwiperSlide>
-                        <SwiperSlide><Card className='home-banner-card'>
-                            <Card.Body>
-                                <span className='elearning-text'>E-LEARNING</span>
-                            </Card.Body>
-                        </Card></SwiperSlide>
-                        <SwiperSlide><Card className='home-banner-card'>
-                            <Card.Body>
-                                <span className='elearning-text'>E-LEARNING</span>
-                            </Card.Body>
-                        </Card></SwiperSlide>
-                        <SwiperSlide><Card className='home-banner-card'>
-                            <Card.Body>
-                                <span className='elearning-text'>E-LEARNING</span>
-                            </Card.Body>
-                        </Card></SwiperSlide>
-                        <SwiperSlide><Card className='home-banner-card'>
-                            <Card.Body>
-                                <span className='elearning-text'>E-LEARNING</span>
-                            </Card.Body>
-                        </Card></SwiperSlide>
-                        <SwiperSlide><Card className='home-banner-card'>
-                            <Card.Body>
-                                <span className='elearning-text'>E-LEARNING</span>
-                            </Card.Body>
-                        </Card></SwiperSlide>
-                        <SwiperSlide><Card className='home-banner-card'>
-                            <Card.Body>
-                                <span className='elearning-text'>E-LEARNING</span>
-                            </Card.Body>
-                        </Card></SwiperSlide>
+                        <SwiperSlide>  <Card.Body>
+                            <img src="https://www.globalskills.com.bd/storage/courses/1647242816_1647242372_1634458200_aws700_430_psd.jpg" alt="" />
+                            <p>Prince 2</p>
+                        </Card.Body></SwiperSlide>
+                        <SwiperSlide>  <Card.Body>
+                            <img src="https://www.globalskills.com.bd/storage/courses/1647242816_1647242372_1634458200_aws700_430_psd.jpg" alt="" />
+                            <p>Prince 2</p>
+                        </Card.Body></SwiperSlide>
+                        <SwiperSlide>  <Card.Body>
+                            <img src="https://www.globalskills.com.bd/storage/courses/1647242816_1647242372_1634458200_aws700_430_psd.jpg" alt="" />
+                            <p>Prince 2</p>
+                        </Card.Body></SwiperSlide>
+                        <SwiperSlide>  <Card.Body>
+                            <img src="https://www.globalskills.com.bd/storage/courses/1647242816_1647242372_1634458200_aws700_430_psd.jpg" alt="" />
+                            <p>Prince 2</p>
+                        </Card.Body></SwiperSlide>
+                        <SwiperSlide>  <Card.Body>
+                            <img src="https://www.globalskills.com.bd/storage/courses/1647242816_1647242372_1634458200_aws700_430_psd.jpg" alt="" />
+                            <p>Prince 2</p>
+                        </Card.Body></SwiperSlide>
+                        <SwiperSlide>  <Card.Body>
+                            <img src="https://www.globalskills.com.bd/storage/courses/1647242816_1647242372_1634458200_aws700_430_psd.jpg" alt="" />
+                            <p>Prince 2</p>
+                        </Card.Body></SwiperSlide>
                     </Swiper>
                 </>
             </div>

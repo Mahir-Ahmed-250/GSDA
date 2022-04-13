@@ -62,36 +62,7 @@ const AccreditationAuthority = () => {
                             <p>Prince 2</p>
 
                         </Card.Body></SwiperSlide>
-                        <SwiperSlide><Card className='home-banner-card'>
-                            <Card.Body>
-                                <span className='elearning-text'>E-LEARNING</span>
-                            </Card.Body>
-                        </Card></SwiperSlide>
-                        <SwiperSlide><Card className='home-banner-card'>
-                            <Card.Body>
-                                <span className='elearning-text'>E-LEARNING</span>
-                            </Card.Body>
-                        </Card></SwiperSlide>
-                        <SwiperSlide><Card className='home-banner-card'>
-                            <Card.Body>
-                                <span className='elearning-text'>E-LEARNING</span>
-                            </Card.Body>
-                        </Card></SwiperSlide>
-                        <SwiperSlide><Card className='home-banner-card'>
-                            <Card.Body>
-                                <span className='elearning-text'>E-LEARNING</span>
-                            </Card.Body>
-                        </Card></SwiperSlide>
-                        <SwiperSlide><Card className='home-banner-card'>
-                            <Card.Body>
-                                <span className='elearning-text'>E-LEARNING</span>
-                            </Card.Body>
-                        </Card></SwiperSlide>
-                        <SwiperSlide><Card className='home-banner-card'>
-                            <Card.Body>
-                                <span className='elearning-text'>E-LEARNING</span>
-                            </Card.Body>
-                        </Card></SwiperSlide>
+
                     </Swiper>
                 </>
             </div>

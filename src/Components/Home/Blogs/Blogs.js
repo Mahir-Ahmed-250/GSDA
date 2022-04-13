@@ -11,16 +11,19 @@ import "swiper/css/pagination";
 // import required modules
 import { Pagination } from "swiper";
 import { Card } from "react-bootstrap";
+import SwiperCore, { Autoplay } from 'swiper';
 
 
 const Blogs = () => {
+    SwiperCore.use([Autoplay])
     return (
 
-        <div className='elearning-heading-text container '>
-            Blogs <br />
+        < div className='elearning-heading-text container ' >
+            Blogs < br />
             <hr style={{ width: "50%", margin: "auto" }} />
             <>
                 <Swiper
+                    autoplay={{ delay: 3000 }}
                     slidesPerView={3}
                     centeredSlides={false}
                     spaceBetween={20}
@@ -73,8 +76,11 @@ const Blogs = () => {
                 </Swiper>
             </>
 
-        </div>
+        </div >
     );
 };
 
 export default Blogs;
+
+
+

@@ -36,9 +36,19 @@
     color: #ca2128;
 }
 
+.searchandbutton {
+    display: flex;
+}
+
 .search-input {
     background-color: rgb(255, 255, 255);
     border-radius: 10px;
+    width: 75%;
+}
+
+.searchButton {
+    height: 56px;
+    border-radius: 10px !important;
 }
 
 .courses-icon {
@@ -81,85 +91,7 @@
     font-family: 'Rancho', cursive;
 }
 
-.start-course-button {
-    height: 70px;
-    width: 250px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-transform: uppercase;
-    color: #fff;
-    border-radius: 4px;
-    overflow: hidden;
-    position: relative;
-    cursor: pointer;
-    font-size: 20px;
-    font-family: cursive;
-}
 
-.start-course-button span:nth-child(1) {
-    position: absolute;
-    left: 0;
-    top: 0;
-    transform: scaleY(0);
-    background-color: rgb(255, 255, 255);
-    width: 4px;
-    height: 100%;
-    transition: all 0.5s;
-    transform-origin: bottom
-}
-
-.start-course-button:hover span:nth-child(1) {
-    transform: scaleY(1)
-}
-
-.start-course-button span:nth-child(2) {
-    position: absolute;
-    left: 0;
-    top: 0;
-    transform: scaleX(0);
-    background-color: rgb(255, 255, 255);
-    width: 100%;
-    height: 4px;
-    transition: all 0.5s;
-    transform-origin: left
-}
-
-.start-course-button:hover span:nth-child(2) {
-    transform: scaleX(2)
-}
-
-.start-course-button span:nth-child(3) {
-    position: absolute;
-    right: 0;
-    top: 0;
-    transform: scaleY(0);
-    background-color: rgb(255, 255, 255);
-    width: 4px;
-    height: 100%;
-    transition: all 0.5s;
-    transform-origin: top
-}
-
-.start-course-button:hover span:nth-child(3) {
-    transform: scaleY(1)
-}
-
-.start-course-button span:nth-child(4) {
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    transform: scaleX(0);
-    background-color: rgb(255, 255, 255);
-    width: 100%;
-    height: 4px;
-    transition: all 0.5s;
-    transform-origin: top
-}
-
-.start-course-button:hover span:nth-child(4) {
-    transform: scaleX(1)
-}
 
 @media only screen and (max-width: 1080px) {
     .home-banner {
@@ -172,6 +104,6 @@
     }
 
     .search-input {
-        width: 150px;
+        width: 50%;
     }
 }

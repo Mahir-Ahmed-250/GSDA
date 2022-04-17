@@ -9,7 +9,6 @@ import Button from '@mui/material/Button';
 import TextField from '@mui/material/TextField';
 import Stack from '@mui/material/Stack';
 import Autocomplete from '@mui/material/Autocomplete';
-import { Nav } from 'react-bootstrap';
 
 
 const HomeBanner = () => {
@@ -166,36 +165,31 @@ const HomeBanner = () => {
                             </div>
                         </div>
                         <div className="content-center">
-                            {/* <span className="start-course-button btn btn-danger">
-                                <span ></span>
-                                <span ></span>
-                                <span ></span>
-                                <span ></span>
-                                Start Learning
-                            </span> */}
 
-                            <div> <Stack spacing={2}>
-                                <Autocomplete className="search-input"
-                                    onKeyDown={(event) => {
-                                        if (event.key === 'Enter') {
-                                            alert('hello')
-                                            event.defaultMuiPrevented = true;
-                                            // your handler code
-                                        }
-                                    }}
-                                    id="free-solo-demo"
-                                    freeSolo
-                                    options={top100Films.map((option) => option.title)}
-                                    renderInput={(params) => <TextField className="search-input"  {...params} placeholder="Search Courses" />}
+                            <div className='searchandbutton'>
+                                <Stack spacing={2} className="search-input">
+                                    <Autocomplete
+                                        onKeyDown={(event) => {
+                                            if (event.key === 'Enter') {
+                                                alert('hello')
+                                                event.defaultMuiPrevented = true;
 
-                                />
-                            </Stack></div>
-                            <div>  <Button className="mt-2" onClick={() => {
-                                alert('hello')
-                            }}
-                                variant="contained" size="large">
-                                Search
-                            </Button> </div>
+                                            }
+                                        }}
+                                        id="free-solo-demo"
+                                        freeSolo
+                                        options={top100Films.map((option) => option.title)}
+                                        renderInput={(params) => <TextField   {...params} placeholder="Search Courses" />}
+
+                                    />
+                                </Stack>
+                                <Button className="searchButton" onClick={() => {
+                                    alert('hello')
+                                }}
+                                    variant="contained" size="large">
+                                    Search
+                                </Button>
+                            </div>
 
 
 

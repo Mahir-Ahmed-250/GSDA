@@ -4,6 +4,7 @@ import { Container, Nav, Navbar, NavDropdown } from 'react-bootstrap';
 import logo from './logo.png';
 import './StickyNav.css'
 import { createTheme } from '@mui/material/styles';
+import { NavLink } from 'react-router-dom';
 
 const theme = createTheme({
     palette: {
@@ -22,17 +23,17 @@ const StickyNav = () => {
 
 
     return (
-        <Navbar sticky='top' bg="light" expand="lg">
+        <Navbar bg="light" expand="lg">
             <Container >
-                <Navbar.Brand href="#"><img className='logo' src={logo} alt="" /></Navbar.Brand>
+                <NavLink to="/"><img className='logo' src={logo} alt="" /></NavLink>
                 <Navbar.Toggle aria-controls="navbarScroll" />
                 <Navbar.Collapse id="navbarScroll">
 
-                    <Nav.Link className='nav-link'>Home</Nav.Link>
-                    <Nav.Link className='nav-link'>E-learning Courses</Nav.Link>
-                    <Nav.Link className='nav-link'>Classroom Courses</Nav.Link>
-                    <Nav.Link className='nav-link'>Heros</Nav.Link>
-                    <Nav.Link className='nav-link'>Digital Services</Nav.Link>
+                    <NavLink className='nav-link' to="/home">Home</NavLink>
+                    <NavLink className='nav-link' to="/elearning_courses">E-learning Courses</NavLink>
+                    <NavLink className='nav-link' to="/classroom_courses">Classroom Courses</NavLink>
+                    <NavLink className='nav-link' to="/heros">Heros</NavLink>
+                    <NavLink className='nav-link' to="/digital_services">Digital Services</NavLink>
                     <NavDropdown title="More Pages" id="navbarScrollingDropdown" style={{ textDecoration: "none" }}>
                         <NavDropdown.Item className='nav-link-drop' >About Us</NavDropdown.Item>
                         <NavDropdown.Item className='nav-link-drop'>FAQ's</NavDropdown.Item>

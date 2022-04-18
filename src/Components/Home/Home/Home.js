@@ -1,4 +1,5 @@
 import React from 'react';
+import Footer from '../../Shared/Footer/Footer';
 import AccreditationAuthority from '../AccreditationAuthority/AccreditationAuthority';
 import Blogs from '../Blogs/Blogs';
 import ClassRoomCourses from '../ClassroomCourses/ClassroomCoursesAll/ClassRoomCourses';
@@ -23,6 +24,7 @@ const Home = () => {
             <Blogs></Blogs>
             <ContactUs></ContactUs>
             <Reviews></Reviews>
+            <Footer></Footer>
         </div>
     );
 };

@@ -1,5 +1,4 @@
 import React from 'react';
-import Footer from '../../Shared/Footer/Footer';
 import AccreditationAuthority from '../AccreditationAuthority/AccreditationAuthority';
 import Blogs from '../Blogs/Blogs';
 import ClassRoomCourses from '../ClassroomCourses/ClassroomCoursesAll/ClassRoomCourses';
@@ -16,15 +15,14 @@ const Home = () => {
         <div>
             <HomeBanner></HomeBanner>
             <HomeBannerCard></HomeBannerCard>
-            <ELearningCourses></ELearningCourses>
             <ClassRoomCourses></ClassRoomCourses>
+            <ELearningCourses></ELearningCourses>
             <PracticeExams></PracticeExams>
             <AccreditationAuthority></AccreditationAuthority>
             <Events></Events>
             <Blogs></Blogs>
             <ContactUs></ContactUs>
             <Reviews></Reviews>
-            <Footer></Footer>
         </div>
     );
 };

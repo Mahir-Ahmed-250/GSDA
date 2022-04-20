@@ -4,7 +4,7 @@ import { Container, Nav, Navbar, NavDropdown } from 'react-bootstrap';
 import logo from './logo.png';
 import './StickyNav.css'
 import { createTheme } from '@mui/material/styles';
-import { NavLink } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 
 const theme = createTheme({
     palette: {
@@ -42,12 +42,12 @@ const StickyNav = () => {
                         <NavDropdown.Item className='nav-link-drop'>Blog's</NavDropdown.Item>
                     </NavDropdown>
                     <ThemeProvider theme={theme}>
-                        <Button onClick={() => {
-                            alert('hello')
-                        }}
-                            variant="contained" size="large" color="neutral">
-                            Login
-                        </Button>
+                        <Link to='/login' className="login-link">
+                            <Button
+                                variant="contained" size="large" color="neutral" >
+                                Login
+                            </Button>
+                        </Link>
                         <Button className="ms-4" onClick={() => {
                             alert('hello')
                         }}

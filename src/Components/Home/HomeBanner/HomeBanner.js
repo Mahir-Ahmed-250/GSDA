@@ -197,7 +197,7 @@ const HomeBanner = () => {
                         <br />
                     </div>
                     <div className="col-lg-4 col-12">
-                        <iframe className="home-player" width="620" height="380" src="https://www.youtube.com/embed/slyY95bNF8E" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+                        <iframe className="home-player" width="620" height="380" src="https://www.youtube.com/embed/OIJ5cMoC-nM?rel=0" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
                     </div>
                 </div>
             </div>

@@ -1,4 +1,3 @@
-import React from "react";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
 
@@ -81,7 +80,8 @@ const ClassRoomCourses = () => {
                         <SwiperSlide>  <Card.Body>
                             <img src="https://www.globalskills.com.bd/storage/courses/1647242816_1647242372_1634458200_aws700_430_psd.jpg" alt="" />
                             <p>Prince 2</p>
-                        </Card.Body></SwiperSlide>
+                        </Card.Body>
+                        </SwiperSlide>
                     </Swiper>
                 </>
             </div>

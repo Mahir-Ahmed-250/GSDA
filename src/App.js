@@ -7,6 +7,8 @@ import ElearningCourses from "./Components/ElearningCoursesAll/ElearningCourses/
 import ClassroomCourses from "./Components/ClassroomCoursesAll/ClassroomCourses/ClassroomCourses";
 import Heros from "./Components/HerosAll/Heros";
 import DigitalServices from "./Components/DigitalServices/DigitalServices";
+import Login from "./Components/Login/Login";
+import Footer from "./Components/Shared/Footer/Footer";
 
 function App() {
   return (
@@ -33,9 +35,13 @@ function App() {
         <Route path='/digital_services' element={<DigitalServices />} >
 
         </Route>
+        <Route path='/login' element={<Login />} >
+
+        </Route>
+
       </Routes>
 
-
+      <Footer></Footer>
 
 
     </div>

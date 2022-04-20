@@ -2,7 +2,6 @@ import React from 'react';
 import { faFacebook, faInstagram, faTwitter, faYoutube } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import img1 from './1.png'
-import { Button } from 'react-bootstrap';
 import './Footer.css'
 
 
@@ -24,10 +23,9 @@ const Footer = () => {
                     <img className="payment" src={img1} alt="" />
                 </div>
                 <div className="footer-3">
-                    <h5 className="footer-icons1">{fb}</h5>
-                    <h5 className="footer-icons2">{yt}</h5>
-                    <h5 className="footer-icons3">{twitter}</h5>
-                    <h5 className="footer-icons4">{instagram}</h5>
+                    <a href="https://www.facebook.com/globalskillsbd"><h5 className="footer-icons1">{fb}</h5></a>
+                    <a href="https://twitter.com/gsdabd?lang=en"><h5 className="footer-icons1">{twitter}</h5></a>
+                    <a href="https://www.youtube.com/channel/UCsaze3eS7onawxGN149h1Kw"><h5 className="footer-icons1">{yt}</h5></a>
                 </div>
                 <div className="footer-4">
                     {/* <div>

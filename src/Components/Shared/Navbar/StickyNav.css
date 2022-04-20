@@ -21,6 +21,10 @@
     font-family: 'Overlock', cursive;
 }
 
+.login-link {
+    text-decoration: none;
+}
+
 @media only screen and (max-width: 1080px) {
     .search-input {
         margin-bottom: 10px;

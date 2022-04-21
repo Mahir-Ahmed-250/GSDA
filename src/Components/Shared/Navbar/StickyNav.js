@@ -48,12 +48,13 @@ const StickyNav = () => {
                                 Login
                             </Button>
                         </Link>
-                        <Button className="ms-4" onClick={() => {
-                            alert('hello')
-                        }}
-                            variant="contained" size="large" color="neutral">
-                            Register
-                        </Button>
+                        <Link to='/registration' className="login-link ms-4">
+                            <Button
+                                variant="contained" size="large" color="neutral" >
+                                Registration
+                            </Button>
+                        </Link>
+
                     </ThemeProvider>
                 </Navbar.Collapse>
             </Container>

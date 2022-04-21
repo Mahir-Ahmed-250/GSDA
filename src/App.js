@@ -9,6 +9,7 @@ import Heros from "./Components/HerosAll/Heros";
 import DigitalServices from "./Components/DigitalServices/DigitalServices";
 import Login from "./Components/Login/Login";
 import Footer from "./Components/Shared/Footer/Footer";
+import Registration from "./Components/Registration/Registration";
 
 function App() {
   return (
@@ -36,6 +37,9 @@ function App() {
 
         </Route>
         <Route path='/login' element={<Login />} >
+
+        </Route>
+        <Route path='/registration' element={<Registration />} >
 
         </Route>
 

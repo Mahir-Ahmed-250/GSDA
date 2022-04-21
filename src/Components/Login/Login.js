@@ -1,7 +1,9 @@
-
 import React from 'react';
 import './Login.css';
-import img from './login.png'
+import img from './login.png';
+
+
+
 const Login = () => {
     return (
         <div className='container'>

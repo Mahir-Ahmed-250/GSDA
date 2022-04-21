@@ -1,14 +1,15 @@
 import React from 'react';
-import { faFacebook, faInstagram, faTwitter, faYoutube } from '@fortawesome/free-brands-svg-icons';
+import { faFacebook, faTwitter, faYoutube } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import img1 from './1.png'
 import './Footer.css'
+import { Link } from 'react-router-dom';
 
 
 const fb = <FontAwesomeIcon icon={faFacebook} />
 const yt = <FontAwesomeIcon icon={faYoutube} />
 const twitter = <FontAwesomeIcon icon={faTwitter} />
-const instagram = <FontAwesomeIcon icon={faInstagram} />
+
 
 const Footer = () => {
     return (
@@ -24,19 +25,24 @@ const Footer = () => {
                 </div>
                 <div className="footer-3">
                     <a href="https://www.facebook.com/globalskillsbd"><h5 className="footer-icons1">{fb}</h5></a>
-                    <a href="https://twitter.com/gsdabd?lang=en"><h5 className="footer-icons1">{twitter}</h5></a>
-                    <a href="https://www.youtube.com/channel/UCsaze3eS7onawxGN149h1Kw"><h5 className="footer-icons1">{yt}</h5></a>
+                    <a href="https://twitter.com/gsdabd?lang=en"><h5 className="footer-icons2">{twitter}</h5></a>
+                    <a href="https://www.youtube.com/channel/UCsaze3eS7onawxGN149h1Kw"><h5 className="footer-icons3">{yt}</h5></a>
                 </div>
                 <div className="footer-4">
-                    {/* <div>
-                        <p>İsmetpaşa, 122. Sokak, Sultangazi/İstanbul, Turkey</p>
-                    </div>
-                    <div>
-                        <p>+324-2350297</p>
-                    </div>
-                    <div>
-                        <p><a className='mail' href="mailto:support@company.com">contact@wheelbase.com</a></p>
-                    </div> */}
+                    <Link to='/login'>Home</Link><br />
+                    <Link to='/login'>About</Link><br />
+                    <Link to='/login'>FAQs</Link><br />
+                    <Link to='/login'>Contact</Link><br />
+                    <Link to='/login'>Privacy Policy</Link><br />
+                    <Link to='/login'>Get In Touch</Link><br />
+                    <Link to='/login'>Blog</Link><br />
+                    <Link to='/login'>Letter of Attendance /
+                        Certificate
+                        Courses</Link><br />
+                    <Link to='/login'>E-learning Courses</Link><br />
+                    <Link to='/login'>Classroom Courses
+                    </Link><br />
+                    <Link to='/login'>Mocktest</Link><br />
                 </div>
                 <div className="footer-5">
                     <p>Our Location</p>

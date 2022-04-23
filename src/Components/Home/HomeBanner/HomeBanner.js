@@ -2,9 +2,6 @@
 
 import React from 'react';
 import './HomeBanner.css'
-import img1 from "./100.png"
-import img2 from "./200.png"
-import img3 from "./300.png"
 import Button from '@mui/material/Button';
 import TextField from '@mui/material/TextField';
 import Stack from '@mui/material/Stack';
@@ -144,26 +141,12 @@ const HomeBanner = () => {
             <br />
             <br />
             <br />
-            <div className='container'>
-                <div className="row">
-                    <div className="col-lg-6 col-12">
+            <div className='container '>
+                <div className="row ">
+                    <div className="col-lg-6 col-12 ">
                         <h5 className='welcome-text-1'> Learn on your Schedule</h5>
                         <h3 className='welcome-text-2'>Welcome To <span className='company-name'>Global Skills Development Agency</span></h3>
-                        <br />
-                        <div className="row">
-                            <div className="col-lg-3">
-                                <img className="courses-icon" src={img1} alt="" />
-                                <p className='courses-text'>50+ Courses</p>
-                            </div>
-                            <div className="col-lg-3">
-                                <img className="instructor-icon" src={img2} alt="" />
-                                <p className='instructor-text'>50+ Instructor</p>
-                            </div>
-                            <div className="col-lg-3">
-                                <img className="user-icon" src={img3} alt="" />
-                                <p className='user-text'>50+ Graduates</p>
-                            </div>
-                        </div>
+
                         <div className="content-center">
 
                             <div className='searchandbutton'>
@@ -190,14 +173,11 @@ const HomeBanner = () => {
                                     Search
                                 </Button>
                             </div>
-
-
-
                         </div>
                         <br />
                     </div>
-                    <div className="col-lg-4 col-12">
-                        <iframe className="home-player" width="620" height="380" src="https://www.youtube.com/embed/OIJ5cMoC-nM?rel=0" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+                    <div className="mx-auto my-auto col-lg-4 col-12">
+                        <iframe className="home-player" width="473" height="266" src="https://www.youtube.com/embed/OIJ5cMoC-nM?rel=0" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
                     </div>
                 </div>
             </div>

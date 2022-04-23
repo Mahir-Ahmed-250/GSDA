@@ -1,10 +1,10 @@
-import { Button, ThemeProvider } from '@mui/material';
+import { ThemeProvider } from '@mui/material';
 import React from 'react';
-import { Container, Nav, Navbar, NavDropdown } from 'react-bootstrap';
+import { Container, Navbar, NavDropdown } from 'react-bootstrap';
 import logo from './logo.png';
 import './StickyNav.css'
 import { createTheme } from '@mui/material/styles';
-import { Link, NavLink } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
 const theme = createTheme({
     palette: {
@@ -42,19 +42,8 @@ const StickyNav = () => {
                         <NavDropdown.Item className='nav-link-drop'>Blog's</NavDropdown.Item>
                     </NavDropdown>
                     <ThemeProvider theme={theme}>
-                        <Link to='/login' className="login-link">
-                            <Button
-                                variant="contained" size="large" color="neutral" >
-                                Login
-                            </Button>
-                        </Link>
-                        <Link to='/registration' className="login-link ms-4">
-                            <Button
-                                variant="contained" size="large" color="neutral" >
-                                Registration
-                            </Button>
-                        </Link>
-
+                        <NavLink className='nav-link' to='/login'>Login</NavLink>
+                        <NavLink className='nav-link' to='/registration'>Register</NavLink>
                     </ThemeProvider>
                 </Navbar.Collapse>
             </Container>

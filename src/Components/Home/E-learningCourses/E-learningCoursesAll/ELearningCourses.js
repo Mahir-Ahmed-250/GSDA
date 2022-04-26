@@ -1,21 +1,22 @@
-import React from "react";
-// Import Swiper React components
+import React, { useEffect, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-
-// Import Swiper styles
 import "swiper/css";
 import "swiper/css/pagination";
-
-// import required modules
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 import './ELearningCourses.css';
-import { Card } from "react-bootstrap";
 import { Pagination, Navigation } from "swiper";
 import SwiperCore, { Autoplay } from 'swiper';
+import ELearningCourse from "../E-learningCourse/ELearningCourse";
 
 const ELearningCourses = () => {
     SwiperCore.use([Autoplay])
+    const [eLearningCourses, setElearningCourses] = useState([]);
+    useEffect(() => {
+        fetch('https://globalskills.com.bd/api/e-learning/courses')
+            .then(res => res.json())
+            .then(data => setElearningCourses(data))
+    }, [])
     return (
         <div>
             <br />
@@ -37,56 +38,18 @@ const ELearningCourses = () => {
                         spaceBetween={30}
                         slidesPerGroup={3}
                         loop={true}
-                        loopFillGroupWithBlank={true}
-
                         navigation={true}
                         modules={[Pagination, Navigation]}
                         className="mySwiper"
                     >
-                        <SwiperSlide>
-                            <Card >
-                                <Card.Body>
-                                    <img src="https://www.globalskills.com.bd/storage/courses/1647242736_1643872118_PRINCE2__logo_.png_700,430.png" alt="" />
-                                    <p>Prince 2</p>
-                                </Card.Body>
-                            </Card>
-                        </SwiperSlide>
-                        <SwiperSlide><Card >
-                            <Card.Body>
-                                <img src="https://www.globalskills.com.bd/storage/courses/1647242849_1643286433_CCSP_Image.png" alt="" />
-                                <p>Prince 2</p>
-                            </Card.Body>
-                        </Card></SwiperSlide>
-                        <SwiperSlide><Card >
-                            <Card.Body>
-                                <img src="https://www.globalskills.com.bd/storage/courses/1647242816_1647242372_1634458200_aws700_430_psd.jpg" alt="" />
-                                <p>Prince 2</p>
-                            </Card.Body>
-                        </Card></SwiperSlide>
-                        <SwiperSlide>  <Card.Body>
-                            <img src="https://www.globalskills.com.bd/storage/courses/1647242816_1647242372_1634458200_aws700_430_psd.jpg" alt="" />
-                            <p>Prince 2</p>
-                        </Card.Body></SwiperSlide>
-                        <SwiperSlide>  <Card.Body>
-                            <img src="https://www.globalskills.com.bd/storage/courses/1647242816_1647242372_1634458200_aws700_430_psd.jpg" alt="" />
-                            <p>Prince 2</p>
-                        </Card.Body></SwiperSlide>
-                        <SwiperSlide>  <Card.Body>
-                            <img src="https://www.globalskills.com.bd/storage/courses/1647242816_1647242372_1634458200_aws700_430_psd.jpg" alt="" />
-                            <p>Prince 2</p>
-                        </Card.Body></SwiperSlide>
-                        <SwiperSlide>  <Card.Body>
-                            <img src="https://www.globalskills.com.bd/storage/courses/1647242816_1647242372_1634458200_aws700_430_psd.jpg" alt="" />
-                            <p>Prince 2</p>
-                        </Card.Body></SwiperSlide>
-                        <SwiperSlide>  <Card.Body>
-                            <img src="https://www.globalskills.com.bd/storage/courses/1647242816_1647242372_1634458200_aws700_430_psd.jpg" alt="" />
-                            <p>Prince 2</p>
-                        </Card.Body></SwiperSlide>
-                        <SwiperSlide>  <Card.Body>
-                            <img src="https://www.globalskills.com.bd/storage/courses/1647242816_1647242372_1634458200_aws700_430_psd.jpg" alt="" />
-                            <p>Prince 2</p>
-                        </Card.Body></SwiperSlide>
+                        {
+                            eLearningCourses.map(eLearningCourses =>
+                                <SwiperSlide>
+                                    <ELearningCourse key={eLearningCourses.id} eLearningCourses={eLearningCourses}>
+                                    </ELearningCourse>
+                                </SwiperSlide>
+                            )
+                        }
                     </Swiper>
                 </>
             </div>
